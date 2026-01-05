@@ -92,6 +92,7 @@
                 { id: 'traits', label: '能力特質' },
                 { id: 'awards', label: '證照與比賽' },
                 { id: 'career', label: '生涯規劃' },
+                { id: 'resources', label: '資源專區' },
                 { id: 'contact', label: '聯絡我' },
             ];
 
@@ -167,7 +168,7 @@
                                         className="text-lg font-medium text-slate-800 hover:text-teal-600 flex items-center justify-between"
                                     >
                                         {item.label}
-                                        <Icon name="chevron-down" className="-rotate-90 w-4 h-4 opacity-30" />
+                                        <Icon name="chevron-down" className="w-4 h-4 opacity-30" />
                                     </a>
                                 ))}
                             </div>
@@ -221,8 +222,8 @@
 
                             <div className="hidden lg:flex justify-end relative">
                                 <div className="relative">
-                                    <div className="absolute -inset-4 border-2 border-white/20 rounded-[3.5rem] rotate-6"></div>
-                                    <div className="absolute -inset-4 border-2 border-white/10 rounded-[3.5rem] -rotate-3"></div>
+                                    <div className="absolute -inset-4 border-2 border-white/20 rounded-[3.5rem] rotate-0"></div>
+                                    <div className="absolute -inset-4 border-2 border-white/10 rounded-[3.5rem] rotate-0"></div>
                                     <div className="relative w-80 h-[30rem] bg-white rounded-[3rem] shadow-2xl overflow-hidden group">
                                         <div className="absolute inset-0 bg-gradient-to-b from-teal-500/20 to-teal-800/80 z-10 opacity-60"></div>
                                         <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center z-20 text-white">
@@ -431,6 +432,138 @@
                         </div>
                     </section>
 
+                    {/* 資源專區 */}
+                    <section id="resources" className="py-32 bg-teal-50 px-6 scroll-mt-20">
+                        <div className="max-w-6xl mx-auto">
+                            <div className="text-center mb-16">
+                                <span className="inline-block px-4 py-1 bg-white text-teal-600 rounded-full font-bold text-xs uppercase tracking-[0.2em] mb-4 shadow-sm">Resources</span>
+                                <h2 className="text-4xl md:text-5xl font-bold text-slate-900">資源專區</h2>
+                                <div className="h-1.5 w-24 bg-teal-500 mx-auto mt-6 rounded-full"></div>
+                            </div>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                {/* 1. 招生專區 */}
+                                <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                                    <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-inner">
+                                        <Icon name="user-plus" className="w-8 h-8" />
+                                    </div>
+                                    <h3 className="text-xl font-bold mb-4 text-slate-800">招生專區</h3>
+                                    <div className="space-y-4 text-xs">
+                                        <div>
+                                            <div className="font-bold text-blue-600 mb-1 border-b border-blue-50 pb-1">護理系碩士班</div>
+                                            <ul className="space-y-1 text-slate-500">
+                                                <li><a href="https://www.mc.ntu.edu.tw/nursing/Fpage.action?muid=351&fid=164" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 台大護理</a></li>
+                                                <li><a href="https://nursing.ncku.edu.tw/p/412-1106-21201.php?Lang=zh-tw" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 成大護理</a></li>
+                                                <li><a href="https://con.nycu.edu.tw/admission/11__1/" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 陽明交通護理</a></li>
+                                                <li><a href="https://www.cgu.edu.tw/nurse/Subject/Detail/56739?nodeId=15794" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 長庚護理</a></li>
+                                                <li><a href="https://adm-acad.ntunhs.edu.tw/p/403-1066-2562.php?Lang=zh-tw" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 北護護理</a></li>
+                                                <li><a href="https://son.tmu.edu.tw/front/Curriculum/masterprogram/archive.php?ID=c870b54304e4fa100d833b2011aea212bfd66815a6333f5f6f2cc640a60501f1" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 北醫護理</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-blue-600 mb-1 border-b border-blue-50 pb-1">生醫工程 / 醫學</div>
+                                            <ul className="space-y-1 text-slate-500">
+                                                <li><a href="https://www.bme.nchu.edu.tw/admissions.php?id=1" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 中興醫工</a></li>
+                                                <li><a href="https://localadmissions.yzu.edu.tw/masterCont?id=21" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 元智生技工程</a></li>
+                                                <li><a href="https://www.gim.yzu.edu.tw/index.php/zh/" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 元智醫研所</a></li>
+                                                <li><a href="https://www.cgu.edu.tw/recruit/" target="_blank" className="hover:text-blue-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 長庚醫工</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* 2. 學習資源 */}
+                                <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                                    <div className="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-600 mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all shadow-inner">
+                                        <Icon name="book-open" className="w-8 h-8" />
+                                    </div>
+                                    <h3 className="text-xl font-bold mb-4 text-slate-800">學習資源</h3>
+                                    <div className="space-y-3">
+                                        <a href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx" target="_blank" className="flex items-center gap-2 p-3 bg-teal-50/50 rounded-xl hover:bg-teal-600 hover:text-white transition-all group/link">
+                                            <Icon name="search" className="w-4 h-4" />
+                                            <span className="text-xs font-bold">國考考古題</span>
+                                        </a>
+                                        <a href="https://pmm.zct.com.tw/seat/" target="_blank" className="flex items-center gap-2 p-3 bg-teal-50/50 rounded-xl hover:bg-teal-600 hover:text-white transition-all group/link">
+                                            <Icon name="zap" className="w-4 h-4" />
+                                            <span className="text-xs font-bold">油漆式速記系統</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* 3. 留學資源 */}
+                                <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                                    <div className="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 mb-8 group-hover:bg-amber-600 group-hover:text-white transition-all shadow-inner">
+                                        <Icon name="globe" className="w-8 h-8" />
+                                    </div>
+                                    <h3 className="text-xl font-bold mb-4 text-slate-800">留學資源</h3>
+                                    <div className="space-y-4 text-xs">
+                                        <a href="https://www.allearsenglish.com/category/ielts/" target="_blank" className="block p-2 bg-amber-50 rounded-lg hover:bg-amber-100 transition-colors">
+                                            <div className="font-bold text-amber-700 flex items-center gap-1"><Icon name="headphones" className="w-3 h-3" /> 雅思英文 Podcast</div>
+                                        </a>
+                                        <div>
+                                            <div className="font-bold text-amber-600 mb-1 border-b border-amber-50 pb-1">澳洲 (Australia)</div>
+                                            <ul className="space-y-1 text-slate-500">
+                                                <li><a href="https://youtu.be/aeuvm9TD8cA?si=6ebQPWpA1xSG4_A-" target="_blank" className="hover:text-amber-500 flex items-center gap-1"><Icon name="youtube" className="w-3 h-3" /> 如何轉照 (影片 1)</a></li>
+                                                <li><a href="https://www.youtube.com/watch?v=ZtSI-NoP9dw" target="_blank" className="hover:text-amber-500 flex items-center gap-1"><Icon name="youtube" className="w-3 h-3" /> 如何轉照 (影片 2)</a></li>
+                                                <li><a href="https://studycentralau.com/study-in-australia/2023-nursinghfsgew/" target="_blank" className="hover:text-amber-500 flex items-center gap-1"><Icon name="file-text" className="w-3 h-3" /> 兩年制碩士全攻略</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-amber-600 mb-1 border-b border-amber-50 pb-1">美國 (USA)</div>
+                                            <ul className="space-y-1 text-slate-500">
+                                                <li><a href="https://atlas.com.tw/american-nurse/" target="_blank" className="hover:text-amber-500 flex items-center gap-1"><Icon name="link" className="w-3 h-3" /> 成為美國護理師</a></li>
+                                                <li><a href="https://nursing.uworld.com/nclex-rn/" target="_blank" className="hover:text-amber-500 flex items-center gap-1"><Icon name="book" className="w-3 h-3" /> NCLEX 備考課程</a></li>
+                                                <li><a href="https://weibuh.substack.com/p/798" target="_blank" className="hover:text-amber-500 flex items-center gap-1"><Icon name="edit" className="w-3 h-3" /> 美國留學讀護理</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-amber-600 mb-1 border-b border-amber-50 pb-1">加拿大 (Canada)</div>
+                                            <ul className="space-y-1 text-slate-500">
+                                                <li><a href="https://www.talkedu.com.tw/latest-overseas-trends/7380" target="_blank" className="hover:text-amber-500 flex items-center gap-1"><Icon name="map" className="w-3 h-3" /> RN/LPN 留學規劃</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* 4. 相關資源 */}
+                                <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                                    <div className="w-16 h-16 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-600 mb-8 group-hover:bg-rose-600 group-hover:text-white transition-all shadow-inner">
+                                        <Icon name="file-text" className="w-8 h-8" />
+                                    </div>
+                                    <h3 className="text-xl font-bold mb-4 text-slate-800">相關資源</h3>
+                                    <p className="text-slate-500 text-xs mb-8 leading-relaxed">
+                                        專業檢定參考文件，含醒吾 PVQC 專業英文詞彙檢定考問答集。
+                                    </p>
+                                    <a 
+                                        href="file:///C:/Users/USER/OneDrive%20-%20%E5%85%83%E6%99%BA%E5%A4%A7%E5%AD%B8/%E6%96%87%E4%BB%B6/%E9%86%92%E5%90%BE%20PVQC%20%E6%AA%A2%E5%AE%9A%E8%80%83%E5%95%8F%E7%AD%94%E9%9B%86113.8.1.pdf"
+                                        target="_blank"
+                                        className="w-full block text-center py-3 border-2 border-rose-600 text-rose-600 rounded-xl font-bold hover:bg-rose-600 hover:text-white transition-colors text-sm"
+                                    >
+                                        開啟 PVQC 問答集 (PDF)
+                                    </a>
+                                </div>
+
+                                {/* 5. 作品集 */}
+                                <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                                    <div className="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-600 mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all shadow-inner">
+                                        <Icon name="layout" className="w-8 h-8" />
+                                    </div>
+                                    <h3 className="text-xl font-bold mb-4 text-slate-800">作品集</h3>
+                                    <p className="text-slate-500 text-xs mb-8 leading-relaxed">
+                                        數位衛教展示作品，整合臨床護理知識與互動式網頁設計應用。
+                                    </p>
+                                    <a 
+                                        href="https://b23110202-svg.github.io/health-edu-test/"
+                                        target="_blank"
+                                        className="w-full block text-center py-3 border-2 border-teal-600 text-teal-600 rounded-xl font-bold hover:bg-teal-600 hover:text-white transition-colors text-sm"
+                                    >
+                                        中風照顧網站測試版
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     {/* 5. 聯絡我 */}
                     <section id="contact" className="py-32 bg-slate-950 text-white px-6 scroll-mt-20 relative overflow-hidden">
                         <div className="max-w-6xl mx-auto relative z-10">
@@ -444,7 +577,7 @@
                                     <div className="bg-white/5 p-8 rounded-[2.5rem] border border-white/10 hover:bg-white/10 transition-all group">
                                         <Icon name="mail" className="w-10 h-10 text-teal-400 mb-6 group-hover:scale-110 transition-transform" />
                                         <div className="text-[10px] text-teal-500/70 font-bold uppercase tracking-widest mb-2">電子郵件</div>
-                                        <div className="font-bold text-lg">1144008@mail2.yzu.edu.tw</div>
+                                        <div className="font-bold text-lg">s1144008@mail.yzu.edu.tw</div>
                                     </div>
                                     <div className="bg-white/5 p-8 rounded-[2.5rem] border border-white/10 hover:bg-white/10 transition-all group">
                                         <Icon name="phone" className="w-10 h-10 text-blue-400 mb-6 group-hover:scale-110 transition-transform" />
